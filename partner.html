@@ -60,6 +60,8 @@
   .hero .lead { margin-top: 1.4rem; max-width: var(--measure); color: var(--muted); }
   .photo { margin: 0; border-bottom: 1px solid var(--rule); padding-block: 0 clamp(3rem, 8vw, 6rem); }
   .photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+  .photo.band img { aspect-ratio: 16 / 5; object-position: 50% 62%; }
+  @media (max-width: 560px) { .photo.band img { aspect-ratio: 16 / 7; } }
   .photo figcaption { font-size: 0.82rem; color: var(--muted); margin-top: 0.8rem; }
   .list { display: grid; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
   .list li { padding-left: 1.2rem; position: relative; }
@@ -130,6 +132,10 @@
     <p class="lead">Gute Projekte entstehen selten allein. Wir sind offen für Zusammenarbeit mit Entwicklungspartnern, Investoren und Fonds, die Brandenburg ähnlich sehen wie wir: als Region mit Substanz, in der sich Geduld lohnt.</p>
   </section>
 
+  <figure class="photo band">
+    <img src="partner.jpg" width="1536" height="1024" alt="Drei Personen im Rohbau eines Gebäudes blicken auf die Landschaft, eine zeigt nach draußen" loading="eager">
+  </figure>
+
   <section>
     <div class="grid">
       <div class="label">Was wir einbringen</div>
@@ -172,8 +178,7 @@
         <p>Wenn Sie ein konkretes Vorhaben haben oder uns zunächst kennenlernen möchten, schreiben Sie uns oder rufen Sie an.</p>
         <div class="contact">
           <p>Paul Bischoff, Geschäftsführer</p>
-          <p>+49 176 20399124</p>
-          <a class="mail" href="mailto:info@nlb-immobilien.de?subject=Partnerschaft%20NLB">info@nlb-immobilien.de</a>
+          <p><a href="index.html#kontakt">Kontakt</a></p>
         </div>
       </div>
     </div>
